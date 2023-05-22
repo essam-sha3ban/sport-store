@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@100;400;500;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+          rel="stylesheet" />
+    <link href="../Views/css/normalization .css" rel="stylesheet" />
+    <link href="../Views/css/all.min.css" rel="stylesheet" />
+    <link href="../Views/css/main.css" rel="stylesheet" />
+    <title> sport store product details  </title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="../Views/image/logo.png" />
+                </div>
+                <div class="links">
+                    <i class=" menu fa fa-list" aria-hidden="true"></i>
+
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Products">Products</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li> <a href="#acount">acount</a></li>
+                        <li> <a href="#"><img src="../Views/image/cart.png" /></a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <div class="acount">
+        <div class="container">
+            <div class="box">
+                <img src="../Views/image/image1.png" />
+                <div class="form">
+                    <div class="lo-reg">
+                        <span onclick="login()"> Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="hr" />
+                    </div>
+                    <form id="Loginform">
+                        <input type="text" placeholder="user name" />
+                        <input type="password" placeholder="password" />
+                        <a href="home.html"> <input type="button" value="LogIn" class="ptn" /></a>
+                        <a href="#">Forgot Password</a>
+                    </form>
+                    <form id="Registerform">
+                        <input type="text" placeholder="user name" />
+                        <input type="email" placeholder="email" />
+                        <input type="password" placeholder="password" />
+                        <input type="password" placeholder=" conform password" />
+                        <a href="home.html"> <input type="button" value="Register" class="ptn" /></a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  start footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3> Downlood app</h3>
+                <p>downlood app for android or ios mobile phone</p>
+                <div>
+                    <img src="../Views/image/play-store.png" />
+                    <img src="../Views/image/app-store.png" />
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <img src="../Views/image/logo.png" />
+                </div>
+                <p>
+                    our purposo is to sustainably make the pleasure and
+                    bonofits of sport accessible to the mony
+                </p>
+            </div>
+            <div class="box">
+                <h3> uesful links</h3>
+                <a href="#"> coupons</a>
+                <a href="#"> blog post</a>
+                <a href="#">roturn policy</a>
+                <a href="#">join affiliato</a>
+            </div>
+            <div class="box">
+                <h3> follow us</h3>
+                <a href="#"> facebook</a>
+                <a href="#">  twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkid in</a>
+            </div>
+        </div>
+        <hr />
+        <p class="copy">Copy Right &amp; 2022</p>
+    </div>
+
+    <!-- ---------sceipt form------------ -->
+    <script>
+        var Loginform = document.getElementById("Loginform");
+        var Registerform = document.getElementById("Registerform");
+        var hr = document.getElementById("hr");
+        function register() {
+            Registerform.style.transform = "translateX(0px)";
+            Loginform.style.transform = "translateX(0px)";
+            hr.style.transform = "translateX(100px)";
+        }
+        function login() {
+            Registerform.style.transform = "translateX(300px)";
+            Loginform.style.transform = "translateX(300px)";
+            hr.style.transform = "translateX(0px)";
+        }
+    </script>
+</body>
+</html>
